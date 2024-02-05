@@ -22,7 +22,7 @@ public class FilmeService {
     public List<Filme> findAll(){
         Sort sort = Sort.by("prioridade").descending().and(
             Sort.by("nome").ascending().and(
-                Sort.by("assistido").descending()
+                Sort.by("assistido").ascending()
             )
         );
         return filmeRepository.findAll(sort);

@@ -28,6 +28,8 @@ public class Filme {
     
     private String descricao;
 
+    public Filme() {}
+
     public Filme(String nome, String indicacao, int prioridade, String descricao, boolean assistido) {
         this.nome = nome;
         this.indicacao = indicacao;
